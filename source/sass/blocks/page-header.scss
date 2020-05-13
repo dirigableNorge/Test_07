@@ -1,7 +1,262 @@
 .page-header {
-
+  background-image: url("../img/header_background_moblie.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .page-header__wrapper {
-  
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 10px;
+}
+
+.page-header__logo {
+  order: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 88px;
+  max-height: 88px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.page-header__logo-image {
+  object-fit: contain;
+}
+
+.page-header__city {
+  order: 0;
+  display: block;
+  width: 88px;
+
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.page-header__phone {
+  display: none;
+}
+
+.page-header__open-menu-button {
+  position: fixed;
+  top: 41px;
+  right: 38px;
+
+  width: 39px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../img/burger-menu.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__close-menu-button {
+  position: fixed;
+  top: 38px;
+  right: 43px;
+
+  display: none;
+  width: 31px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../img/close-menu.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__nav {
+  position: relative;
+  display: none;
+}
+
+.page-header--open-nav {
+  .page-header__logo {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 44px);
+    z-index: 1002;
+
+    margin: 0;
+  }
+
+  .page-header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+    background-color: $menu-bg;
+  }
+
+  .page-header__close-menu-button {
+    z-index: 1001;
+
+    display: block;
+  }
+
+  .page-header__open-menu-button {
+    display: none;
+  }
+}
+
+.page-header__main-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 140px;
+  padding-bottom: 10px;
+
+  list-style: none;
+
+  border-bottom: 1px solid $divider;
+}
+
+.page-header__main-nav-item {
+  margin-bottom: 30px;
+}
+
+.page-header__main-nav-link {
+  color: white;
+}
+
+.page-header__tutor-button {
+  order: 1;
+
+  width: 200px;
+  padding: 15px 36px;
+
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  border: 2px solid $orange;
+  border-radius: 4px;
+}
+
+.page-header__user-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
+  list-style: none;
+}
+
+.page-header__user-nav-item {
+  margin-bottom: 30px;
+}
+
+.page-header__user-nav-link {
+  color: white;
+}
+
+.page-header--withoutjs {
+  .page-header__open-menu-button,
+  .page-header__close-menu-button {
+    display: none;
+  }
+}
+
+.page-header__intro {
+  order: 3;
+
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.page-header__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__intro-title {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  text-align: center;
+}
+
+.page-header__intro-first-word {
+  color: $orange;
+}
+
+.page-header__intro-text {
+  margin: 0;
+  margin-bottom: 65px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $text-light;
+}
+
+.page-header__sign-up-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  background-color: $orange;
+  border-radius: 4px;
+}
+
+.page-header__next-button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+
+  }
 }

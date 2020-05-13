@@ -11,7 +11,7 @@
     <link rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-regular.woff2">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--open-nav1 page-header--withoutjs1">
     <div class="page-header__wrapper">
       <a href="#" class="page-header__logo">
         <picture>
@@ -20,6 +20,12 @@
       </a>
       <a href="#" class="page-header__city">Москва</a>
       <a href="#" class="page-header__phone">+7 800-562-3452</a>
+      <button class="page-header__open-menu-button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <button class="page-header__close-menu-button">
+        <span class="visually-hidden">Close menu</span>
+      </button>
       <nav class="page-header__nav">
         <ul class="page-header__main-nav-list">
           <li class="page-header__main-nav-item">
@@ -32,10 +38,8 @@
             <a href="#" class="page-header__main-nav-link">Статьи</a>
           </li>
         </ul>
+        <a href="#" class="page-header__tutor-button">Преподавателям</a>
         <ul class="page-header__user-nav-list">
-          <li class="page-header__user-nav-item">
-            <a href="#" class="page-header__user-nav-link">Преподавателям</a>
-          </li>
           <li class="page-header__user-nav-item">
             <a href="#" class="page-header__user-nav-link">Регистрация</a>
           </li>
@@ -46,7 +50,7 @@
       </nav>
       <div class="page-header__intro">
         <div class="page-header__about">
-          <h2 class="page-header__intro-title">Первая образовательная онлайн-платформа, созданная преподами!</h2>
+          <h2 class="page-header__intro-title"><span class="page-header__intro-first-word">Первая</span> образовательная онлайн-платформа, созданная преподами!</h2>
           <p class="page-header__intro-text">Описание уникального торгового предложенияили же описание названия того или иного продукта, который на первом экран</p>
           <a href="#" class="page-header__sign-up-button">зарегистрироваться</a>
         </div>
