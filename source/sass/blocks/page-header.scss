@@ -2,6 +2,10 @@
   background-image: url("../img/header_background_moblie.jpg");
   background-repeat: no-repeat;
   background-position: right top;
+
+  @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header_background_moblie@2x.jpg");
+  }
 }
 
 .page-header__wrapper {
@@ -257,6 +261,10 @@
     background-image: url("../img/header_background_tablet.jpg");
     background-repeat: no-repeat;
     background-position: left 30% top;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header_background_tablet@2x.jpg");
+    }
   }
 
   .page-header__wrapper {
@@ -454,6 +462,10 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header_background_desktop@2x.jpg");
+    }
   }
 
   .page-header__wrapper {
@@ -546,6 +558,10 @@
     background-image: url("../img/stars.png");
     background-repeat: no-repeat;
     background-position: 10px 167px;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/stars@2x.jpg");
+    }
   }
 
   .page-header__intro-title {
