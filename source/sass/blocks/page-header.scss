@@ -253,9 +253,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    background-image: url("../img/header_background_tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: left 30% top;
+  }
+
   .page-header__wrapper {
-    padding-left: 3.7%;
-    padding-right: 3.7%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
     padding-bottom: 50px;
   }
 
@@ -336,7 +342,6 @@
   }
 
   .page-header--open-nav {
-
     .page-header__logo {
       position: relative;
       top: 0;
@@ -409,7 +414,7 @@
 
   .page-header__intro-text {
     margin-bottom: 40px;
-    padding-left: 110px;
+    margin-left: 110px;
 
     font-size: 14px;
     line-height: 18px;
@@ -438,7 +443,129 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__wrapper {
+  .page-header {
+    background-image: url("../img/header_background_desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
 
+  .page-header__wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+
+    box-sizing: content-box;
+  }
+
+  .page-header__logo {
+    width: 111px;
+    height: 111px;
+  }
+
+  .page-header__city,
+  .page-header__phone {
+    font-size: 16px;
+  }
+
+  .page-header__open-menu-button,
+  .page-header__close-menu-button {
+    display: none;
+  }
+
+  .page-header__nav {
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .page-header__main-nav-list {
+    flex-grow: 1;
+    margin-right: auto;
+  }
+
+  .page-header__main-nav-link {
+    font-size: 16px;
+  }
+
+  .page-header__tutor-button {
+    order: 0;
+
+    &:hover,
+    &:focus {
+      background-color: $orange;
+    }
+  }
+
+  .page-header__user-nav-list {
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    padding: 0;
+  }
+
+  .page-header__user-nav-item {
+    margin: 0;
+    margin-left: 41px;
+  }
+
+  .page-header__user-nav-link {
+    font-size: 16px;
+  }
+
+  .page-header__intro {
+    padding-bottom: 185px;
+  }
+
+  .page-header__about {
+    align-items: flex-start;
+    width: 630px;
+  }
+
+  .page-header__intro-title {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+  }
+
+  .page-header__intro-text {
+    margin-left: 216px;
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .page-header__sign-up-button {
+    margin-left: 216px;
+
+    &:hover,
+    &:focus {
+      padding: 12px;
+
+      background-color: transparent;
+
+      border: 2px solid $orange;
+    }
+  }
+
+  .page-header__next-button {
+    width: auto;
+    height: auto;
+    padding-top: 60px;
+
+    text-align: center;
+    color: white;
+
+    background-position: center top;
+  }
+
+  .page-header__next-button-title {
+    display: block;
+
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
   }
 }
