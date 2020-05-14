@@ -289,9 +289,14 @@
   .page-header__phone {
     display: block;
     margin-left: 3.3%;
+    padding-left: 20px;
 
     font-size: 14px;
     color: white;
+
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 
   .page-header__open-menu-button {
@@ -521,6 +526,10 @@
   .page-header__about {
     align-items: flex-start;
     width: 630px;
+
+    background-image: url("../img/stars.png");
+    background-repeat: no-repeat;
+    background-position: 10px 167px;
   }
 
   .page-header__intro-title {
