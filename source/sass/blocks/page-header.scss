@@ -329,10 +329,11 @@
 
   .page-header__main-nav-link {
     font-size: 14px;
+    border-bottom: 2px solid $orange;
   }
 
-  .page-header__main-nav-link[href=""] {
-    border-bottom: 2px solid $orange;
+  .page-header__main-nav-link[href] {
+    border-bottom: none;
   }
 
   .page-header__tutor-button {
@@ -473,6 +474,11 @@
   .page-header__city,
   .page-header__phone {
     font-size: 16px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   .page-header__open-menu-button,
@@ -492,6 +498,11 @@
 
   .page-header__main-nav-link {
     font-size: 16px;
+
+    &[href]:hover,
+    &[href]:focus {
+      text-decoration: underline;
+    }
   }
 
   .page-header__tutor-button {
@@ -517,6 +528,11 @@
 
   .page-header__user-nav-link {
     font-size: 16px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   .page-header__intro {
@@ -568,6 +584,13 @@
     color: white;
 
     background-position: center top;
+
+    &:hover,
+    &:focus {
+      color: rgba(white, 0.7);
+
+      background-position: center 5px;
+    }
   }
 
   .page-header__next-button-title {
